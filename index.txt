@@ -233,7 +233,7 @@
 					<p class="text-gray-600 mb-6 text-justify leading-relaxed text-justify-mobile">
 					Curso de Manejo a la Defensiva – Asociación Chilena de Seguridad (ACHS), orientado a la prevención y funciones a realizar.
 					Conducción de camionetas en viajes frecuentes a V, VI y VII regiones, además de desplazamientos puntuales a Chillán y Temuco para atender urgencias.
-					Camioneta a cargo como Ingeniero Recuperador de Servicios en la Región Metropolitana, asegurando tiempos de respuesta y cumplimiento de protocolos de seguridad.
+					Camioneta a cargo como Ingeniero Recuperador de Servicios en la Región Metropolitana, asegurando tiempos de respuesta y cumplimiento de protocolos de seguridada.
 					</p>
 					<h3 class="text-1xl font-bold text-gray-800 mb-4">Arenas Constructora (5 meses 1998)</h3>
 					<p class="text-gray-600 mb-6 text-justify leading-relaxed text-justify-mobile">
