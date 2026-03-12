@@ -100,7 +100,6 @@
                     <a href="#perfil" class="nav-link">Sobre mí</a>
                     <a href="#experiencia" class="nav-link">Experiencia</a>
                     <a href="#habilidades" class="nav-link">Habilidades</a>
-                    <a href="#sello profesional" class="nav-link">Sello Profesional</a>
                     <a href="#experiencia complementaria" class="nav-link">Experiencia Complementaria</a>
 					<a href="#certificaciones" class="nav-link">Insignias</a>
                     <a href="#formacion" class="nav-link">Formación</a>
@@ -111,7 +110,7 @@
     </nav>
 
     <main>
-        <section id="hero" class="py-24 md:py-32 bg-white">
+        <section id="hero" class="py-24 md:py-32">
             <div class="max-w-5xl mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">Marcelo Andrés Valdés Jiménez</h1>
                 <p class="mt-4 text-xl md:text-2xl text-blue-600 font-medium">Profesional en Operaciones y Soporte Técnico<br>
@@ -132,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section id="perfil" class="py-20 bg-gray">
+        <section id="perfil" class="py-20 bg-white">
             <div class="max-w-5xl mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Sobre mí</h2>
                 <p class="text-xl text-gray-700 text-justify leading-relaxed text-justify-mobile">
@@ -145,7 +144,7 @@
             </div>
         </section>
 
-        <section id="experiencia" class="py-20 bg-white">
+        <section id="experiencia" class="py-20">
             <div class="max-w-5xl mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Evolución Profesional</h2>
                 <div class="relative border-l-2 border-gray-200 ml-12">
@@ -188,54 +187,10 @@
             </div>
         </section>
 
-		<section id="sello-profesional" class="py-20 bg-gray">
-    <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Mi Sello Profesional</h2>
-        <p class="text-center text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
-            Mi forma de trabajar se caracteriza por la estabilidad, el orden y la responsabilidad. 
-            Aporto madurez técnica, continuidad operativa y una ejecución disciplinada que asegura 
-            que los servicios funcionen y se mantengan en el tiempo.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ul class="space-y-4 text-gray-800">
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Continuidad operativa como prioridad.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Orden y disciplina en cada tarea.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Criterio técnico maduro y práctico.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Estabilidad y baja rotación laboral.
-                </li>
-            </ul>
-
-            <ul class="space-y-4 text-gray-800">
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Comunicación clara y directa.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Responsabilidad y confiabilidad.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Enfoque operativo y resolutivo.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-blue-600 font-bold mr-2">•</span> Madurez emocional en ambientes exigentes.
-                </li>
-            </ul>
-        </div>
-    </div>
-		</section>
-
         <section id="habilidades" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Caja de Herramientas Técnicas</h2>
-                <p class="text-center text-xlg text-gray-600 mb-12 max-w-3xl mx-auto">Mi experiencia técnica se ha construido en terreno, en operación real y en contacto directo con clientes, proveedores y fabricantes.<br>
-				Esta sección resume mis competencias técnicas y permite explorar mis habilidades por categoría.</p>
+                <p class="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Un resumen visual de mis áreas de competencia y un listado detallado de tecnologías. Utiliza los filtros para explorar mis habilidades específicas.</p>
                 
                 <div class="grid grid-cols-1 lg:grid-cols-10 gap-12 items-center">
                     <div class="lg:col-span-5">
