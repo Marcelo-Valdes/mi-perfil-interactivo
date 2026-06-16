@@ -424,7 +424,47 @@
                 </div>
             </div>
         </section>
-		
+
+<section>
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-xl relative max-w-md w-full mx-4">
+            <button id="closeContactModalBtn" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl" aria-label="Cerrar ventana de contacto">&times;</button>
+
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Contacto Profesional</h2>
+
+            <form action="https://formsubmit.co/marcelo.valdes.j@gmail.com" method="POST" class="space-y-6">
+
+                <!-- Protección: evita spam bots -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <!-- Nombre -->
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-1">Nombre</label>
+                    <input type="text" name="nombre" required class="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-300">
+                </div>
+
+                <!-- Correo del remitente -->
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-1">Correo</label>
+                    <input type="email" name="correo" required class="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-300">
+                </div>
+
+                <!-- Mensaje -->
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-1">Mensaje</label>
+                    <textarea name="mensaje" rows="4" required class="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-300"></textarea>
+                </div>
+
+                <!-- Botón enviar -->
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+                    Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+			
 	<section>	
 		<div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
             <div class="bg-white p-8 rounded-lg shadow-xl relative max-w-md w-full mx-4">
@@ -433,22 +473,29 @@
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Información de Contacto</h2>
                 
                 <div class="space-y-6">
+				
+					<!-- CORREO SEGURO -->
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
-                        <a href="mailto:marcelo.valdes.j@gmail.com" class="text-gray-700 hover:text-blue-600 transition-colors">marcelo.valdes.j@gmail.com</a>
+                        <span class="text-gray-700">Correo disponible a solicitud</span>
                     </div>
+					
+					<!-- TELÉFONO SEGURO -->
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.42 21 3 14.58 3 6c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                        <a href="tel:+56994485507" class="text-gray-700 hover:text-blue-600 transition-colors">+56 9 9448 5507</a>
+                        <span class="text-gray-700">Teléfono disponible a solicitud</span>
                     </div>
+					
+					<!-- UBICACIÓN SEGURA -->
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Talca,Chile" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-blue-600 transition-colors">Diecinueve Oriente B #136, Talca, Chile</a>
+                        <span class="text-gray-700">Talca, Región del Maule, Chile</span>
                     </div>
                 </div>
             </div>
         </div>
-	</section>	
+	</section>
+	
     </main>
 
 			<footer class="bg-white text-gray">
@@ -461,32 +508,35 @@
 				</div>
         
 					<div class="flex justify-center items-center space-x-8">
-            
-						<button class="info-modal-trigger text-gray-400 hover:text-blue-700 transition duration-300" 
+
+						<!-- BOTÓN CORREO (SEGURO) -->
+						<button class="contact-modal-trigger text-gray-400 hover:text-blue-700 transition duration-300" 
 								aria-label="Mostrar correo electrónico"
 								data-info-type="Correo Electrónico"
-								data-info-text="marcelo.valdes.j@gmail.com"
-								data-info-href="mailto:marcelo.valdes.j@gmail.com"
+						        data-info-text="Disponible a Solicitud"
+								data-info-href=""
 								data-info-icon-svg='<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>'>
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
 								<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
 								<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
 						</button>
-            
-						<button class="info-modal-trigger text-gray-400 hover:text-blue-700 transition duration-300"
+
+						<!-- BOTÓN TELÉFONO (SEGURO) -->
+						<button class="contact-modal-trigger text-gray-400 hover:text-blue-700 transition duration-300"
 								aria-label="Mostrar teléfono"
 								data-info-type="Teléfono Móvil"
-								data-info-text="+56 9 9448 5507"
-								data-info-href="tel:+56994485507"
+								data-info-text="Disponible a Solicitud"
+								data-info-href=""
 								data-info-icon-svg='<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.42 21 3 14.58 3 6c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>'>
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.42 21 3 14.58 3 6c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
 						</button>
 
-						<button class="info-modal-trigger text-gray-400 hover:text-blue-700 transition duration-300" 
+						<!-- BOTÓN UBICACIÓN (SEGURO) -->
+						<button class="contact-modal-trigger text-gray-400 hover:text-blue-700 transition duration-300" 
 								aria-label="Mostrar ubicación"
 								data-info-type="Ubicación"
-								data-info-text="Diecinueve Oriente B #136,Talca,Maule,Chile"
-								data-info-href="https://www.google.com/maps/search/?api=1&query=Diecinueve+Oriente+B+136,+Talca,+Maule,+Chile"
+								data-info-text="Talca, Region del Maule, Chile"
+								data-info-href=""
 								data-info-icon-svg='<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>'>
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
 								<path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
@@ -504,7 +554,7 @@
         
 					<div class="mt-12 text-sm text-gray-400 text-center md:whitespace-nowrap">
 						<p>&copy; 2025 Marcelo Valdés Jiménez. <br> Todos los derechos reservados.
-						<br>Talca, Chile.</p>
+						<br>Talca, Region del Maule, Chile.</p>
 						<br><br>
 					</div>
 				</div>
@@ -521,6 +571,7 @@
 			</footer>
 
      <script>
+	 	 
         document.addEventListener('DOMContentLoaded', function() {
             
             const skillsData = [
@@ -734,6 +785,20 @@
 
         // (Aquí iría el resto de tu script para las habilidades y la navegación, si lo tienes)
     });
-</script>		
+</script>
+
+<script>
+document.querySelectorAll('.contact-modal-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.getElementById('contactModal').classList.remove('hidden');
+    });
+});
+
+document.getElementById('closeContactModalBtn').addEventListener('click', () => {
+    document.getElementById('contactModal').classList.add('hidden');
+});
+</script>
+
+
  </body>
 </html>
